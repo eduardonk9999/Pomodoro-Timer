@@ -13,7 +13,7 @@ Projeto Pomodoro, usando JavaScript recriei um pomodoro, para ajudar a organizar
 
 
  <a href="#" target='_blank'> 
-![](https://github.com/eduardonk9999/Pomodoro-Timer/blob/master/imgs/capa.png "Logo") 
+![](https://raw.githubusercontent.com/eduardonk9999/Pomodoro-Timer/master/imgs/capa.png "Logo") 
   
 
 </a>
