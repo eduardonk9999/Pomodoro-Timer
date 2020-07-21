@@ -1,5 +1,4 @@
-
-<h1>Pomodoro Timer</h1>
+# Pomodoro Timer
 
 <p>
 Projeto Pomodoro, usando JavaScript recriei um pomodoro, para ajudar a organizar melhor o tempo.
