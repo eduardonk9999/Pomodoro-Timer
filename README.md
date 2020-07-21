@@ -1,5 +1,5 @@
-# snake
-<h1>Pomodoro Timer<h1>
+
+<h1>Pomodoro Timer</h1>
 
 <p>
 Projeto Pomodoro, usando JavaScript recriei um pomodoro, para ajudar a organizar melhor o tempo.
