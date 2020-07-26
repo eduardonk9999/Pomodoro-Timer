@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pomodoro - Timer</title>
 </head>
+
 <body>
-    
-    <span class="contador"></span>
-    
 
-    <button class="inicia">Play</button>    
-    <button class="pause">Pause</button>    
-    <button class="reset">Reset</button>    
+    <div class="pomodoro">
 
+        <div class="wrapper pomodoro__wrapp">
+            <div class="pomodoro__cheff">
+                <img src="imgs/cheff.svg" alt="Img Cheff" class="cheff__img">
+            </div>
+            <div class="timer">
+                <h1 class="timer__title">Pomodoro Timer</h1>
+                <span class="contador"></span>
+                <div class="btns">
+                    <button class="inicia">Play</button>
+                    <button class="pause">Pause</button>
+                    <button class="reset">Reset</button>
+                </div>
+                <button class="config">Configurações</button>
+            </div>
+        </div>
+
+        <div class="popup__reset">
+            <div class="popup__wrapp">
+                <p class="popup_discr">
+                    Para quantos minutos você quer ajustar seu pomodoro?
+                </p>
+                <h2 class="titleReset">Minutos</h2>
+                <input type="number" class="minutos">
+            </div>
+        </div>
+
+    </div>
 
     <script src="js/timer.js"></script>
 </body>
+
 </html>
