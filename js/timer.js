@@ -3,45 +3,47 @@ var tempoFront = document.querySelector('.contador');
 var btnI = document.querySelector('.inicia');
 var btnP = document.querySelector('.pause');
 var btnR = document.querySelector('.reset');
-var S = 0;
-var M = 0;
-var H = 0;
+var S = 15;
+var M = 5;
+
 
 
 var cronometro;
 
+
+tempoFront.innerHTML = `${M}:${S}`;
+
+
 function relogio() {
-    // var horaAtual = new Date();
-    // var hora = horaAtual.getHours();
-    // var minutos = horaAtual.getMinutes();
-    // var segundos = horaAtual.getSeconds();
-    // var mileSegundos = horaAtual.getMilliseconds();
 
 
-    var tempoSegundo = S++;
+    
+    S = S - 1;
    
     // var tempoHora = H++;
 
-    
+    tempoFront.innerHTML = `${M}:${S}`;
 
-
-    tempoFront.innerHTML = `${0}:${M}:${tempoSegundo}`;
-
-
-
-    if (tempoSegundo >= 59) {
-        clearInterval(cronometro);
-        M += 1;
-        S = 0;
-        tempoFront.innerHTML = `${0}:${M}:${tempoSegundo}`;
-        rodandoTempo();
+    if(M < 10) {
+        tempoFront.innerHTML = `0${M}:${S}`;
+    }
+    if(S < 10) {
+        tempoFront.innerHTML = `0${M}:0${S}`;
     }
 
-    // if (tempoMinuto >= 59) {
-    //     tempoFront.innerHTML = `${tempoHora}:${tempoMinuto}:${tempoSegundo}`;
-    // }
 
-    
+    if (S < 1) {
+        clearInterval(cronometro);
+        M = M - 1;
+        S = 10;
+        rodandoTempo();
+    }
+    if(M === 0) {
+        console.log('FIM');
+        tempoFront.innerHTML = `${0}:${S}`;
+        clearInterval(cronometro);
+        
+    }
 
 }
 
@@ -64,6 +66,5 @@ btnR.addEventListener('click', function () {
     clearInterval(cronometro);
     S = 0;
     M = 0;
-    H = 0;
     rodandoTempo();
 });
