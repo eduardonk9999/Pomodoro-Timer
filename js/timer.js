@@ -73,9 +73,3 @@ btnR.addEventListener('click', function () {
 
 
 });
-
-
-//Config
-// btnConfig.addEventListener('click', function(){
-
-// });
