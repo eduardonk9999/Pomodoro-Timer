@@ -112,7 +112,9 @@ button.config {
     margin: 40px auto 0 auto;
     display: block;
 }
-
+button.config{
+    display: none;
+}
 
 @media(max-width: 768px){
     h1.timer__title{
